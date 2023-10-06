@@ -1,0 +1,55 @@
+@use "../base/variables" as var;
+
+.hero {
+  margin-bottom: var.$section-gap;
+
+  @media (min-width: 64rem) {
+    margin-bottom: calc(8.5rem - 96px);
+  }
+
+  h1 {
+    font-size: var.$mobile-font-size;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: var.$gap-bottom-content;
+  }
+
+  .header-line {
+    margin-bottom: var.$gap-bottom-content;
+  }
+
+  p {
+    text-align: center;
+    max-width: 550px;
+    margin-bottom: var.$gap-bottom-content;
+    color: var.$secondary;
+
+    @media (min-width: 64rem) {
+      max-width: 800px;
+    }
+  }
+
+  .cta-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media (min-width: 46.5rem) {
+      flex-direction: row;
+      gap: 3.8rem;
+    }
+
+    > a {
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    :first-child {
+      @include var.btn-outline;
+    }
+
+    :last-child {
+      @include var.btn-filled;
+    }
+  }
+}

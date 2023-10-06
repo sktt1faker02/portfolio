@@ -1,0 +1,29 @@
+@use "../base/variables" as var;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-inline: 1.5rem;
+  margin-bottom: 2rem;
+
+  a {
+    background-color: var.$secondary;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    font-size: 2rem;
+    color: var.$primary;
+    transition: var.$transition;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
