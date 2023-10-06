@@ -1,6 +1,3 @@
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
-
 import { BiLogoGithub, BiLink } from "react-icons/bi";
 import { projects } from "../data";
 
@@ -16,7 +13,7 @@ const Projects = () => {
               <h3>{project.title}</h3>
               <div className="image-container">
                 <a href={project.live} target="_blank" rel="noopener noreferrer">
-                  {<img src={project.img} alt={project.title} /> || <Skeleton height={300} />}
+                  {<img src={project.img} alt={project.title} />}
                 </a>
               </div>
 
