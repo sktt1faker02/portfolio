@@ -5,8 +5,8 @@ const About = () => {
       <div className="header-line"></div>
       <p>Aspiring Junior Frontend Developer with a passion for creating interactive and user-friendly web experiences. Committed to continuous learning and growth.</p>
       <div className="cta-links">
-        <a href="#">projects</a>
-        <a href="#">contact</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
       </div>
     </section>
   );
