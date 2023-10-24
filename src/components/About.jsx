@@ -24,7 +24,7 @@ const About = () => {
         </li>
         <li>
           <BiLogoSass />
-          SASS
+          SCSS
         </li>
         <li>
           <BiLogoTailwindCss />
