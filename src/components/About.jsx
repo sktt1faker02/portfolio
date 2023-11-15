@@ -1,4 +1,5 @@
 import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoReact, BiLogoSass, BiLogoTailwindCss } from "react-icons/bi";
+import { SiNextdotjs } from "react-icons/si";
 const About = () => {
   return (
     <section className="section-center about" id="about">
@@ -21,6 +22,10 @@ const About = () => {
         <li>
           <BiLogoReact />
           React
+        </li>
+        <li>
+          <SiNextdotjs />
+          Next.js
         </li>
         <li>
           <BiLogoSass />
