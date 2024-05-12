@@ -10,6 +10,8 @@ body {
 }
 
 header {
+  max-width: 1400px;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,6 +21,10 @@ header {
 
   z-index: 999;
   background-color: var.$white;
+
+  @media (min-width: 90rem) {
+    // margin-inline: 6.5rem;
+  }
 
   .logo {
     font-size: 2rem;

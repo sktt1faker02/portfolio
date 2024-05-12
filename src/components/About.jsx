@@ -1,11 +1,11 @@
-import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoReact, BiLogoSass, BiLogoTailwindCss } from "react-icons/bi";
-import { SiNextdotjs } from "react-icons/si";
+import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoWordpress } from "react-icons/bi";
+import { SiElementor } from "react-icons/si";
 const About = () => {
   return (
     <section className="section-center about" id="about">
       <h2>about</h2>
       <div className="header-line"></div>
-      <p>As a Junior Frontend Developer, I&apos;m passionate about creating visually appealing, user-friendly websites and eager to learn and grow in the field</p>
+      <p>I have extensive experience in custom theme development and utilizing page builders like Elementor, WP Bakery, and Yootheme to create user-friendly and responsive websites across various devices. Additionally, I am proficient in managing plugins and implementing SEO optimization.</p>
       <ul className="about-techstack">
         <li>
           <BiLogoHtml5 />
@@ -20,20 +20,12 @@ const About = () => {
           JavaScript
         </li>
         <li>
-          <BiLogoReact />
-          React
+          <BiLogoWordpress />
+          WordPress
         </li>
         <li>
-          <SiNextdotjs />
-          Next.js
-        </li>
-        <li>
-          <BiLogoSass />
-          SCSS
-        </li>
-        <li>
-          <BiLogoTailwindCss />
-          Tailwind
+          <SiElementor />
+          Elementor
         </li>
       </ul>
     </section>

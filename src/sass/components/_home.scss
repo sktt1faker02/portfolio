@@ -32,6 +32,7 @@
   .cta-links {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
 
     @media (min-width: 46.5rem) {
@@ -44,12 +45,39 @@
       text-transform: capitalize;
     }
 
-    :first-child {
+    a:first-child {
       @include var.btn-outline;
     }
 
-    :last-child {
+    a:nth-child(2) {
       @include var.btn-filled;
+      @media (min-width: 46.5rem) {
+        order: 3;
+      }
+    }
+
+    .resume-links {
+      color: var.$secondary;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var.$primary;
+      padding-inline: 1rem;
+      padding-block: 0.3rem;
+      border-radius: 5px;
+      text-decoration: underline;
+      // font-weight: 700;
+      font-size: 1.3rem;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: var.$secondary;
+        color: var.$primary;
+      }
+
+      svg {
+        font-size: 2rem;
+      }
     }
   }
 }

@@ -32,14 +32,19 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
+
+  @media (min-width: 64rem) {
+    font-size: 1.125rem;
+  }
+
   // background-color: var.$primary;
 }
 
-// main {
-//   position: relative;
-//   z-index: 3;
-// }
+main {
+  max-width: 1400px;
+  margin-inline: auto;
+}
 
 h1 {
   font-size: 3rem;

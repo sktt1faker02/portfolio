@@ -4,7 +4,7 @@
   margin-bottom: calc(5.5rem - 96px);
 
   @media (min-width: 90rem) {
-    margin-inline: 6.5rem;
+    // margin-inline: 6.5rem;
   }
 
   .header-line {
@@ -13,21 +13,42 @@
 
   .projects-container {
     display: grid;
-    gap: 6rem;
+    // place-content: center;
+    // max-width: 1250px;
+    gap: 1.5rem;
+
+    @media (min-width: 48rem) {
+      grid-template-columns: repeat(2, 1fr);
+      // column-gap: 6rem;
+      // row-gap: 4rem;
+    }
 
     @media (min-width: 64rem) {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 6rem;
-      row-gap: 4rem;
+      grid-template-columns: repeat(3, 1fr);
     }
 
     article {
-      display: grid;
+      display: flex;
+      flex-direction: column;
+      // box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      overflow: hidden;
+      border-width: 1px;
+      border-style: solid;
+      border-color: var.$primary;
+      border-radius: 10px;
+      padding: 1rem;
+
+      .title-wrapper {
+        // border-bottom: 1px solid #dbdbdb;
+        // flex-grow: 1;
+        // padding-bottom: 1.375rem;
+        margin-bottom: 1rem;
+      }
 
       h3 {
-        grid-row: 2;
-        border-bottom: 1px solid #dbdbdb;
-        padding-bottom: 1.375rem;
+        margin-bottom: 0;
+        // border-bottom: 1px solid #dbdbdb;
+        // padding-bottom: 1.375rem;
       }
 
       .image-container {
@@ -55,6 +76,10 @@
 
       p {
         margin-bottom: 1rem;
+      }
+
+      .project-footer {
+        margin-top: auto;
       }
       ul {
         @include var.reset-list-style;

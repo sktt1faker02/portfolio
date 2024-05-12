@@ -10,26 +10,31 @@ const Projects = () => {
         {projects.map((project) => {
           return (
             <article key={project.id}>
-              <h3>{project.title}</h3>
               <div className="image-container">
                 <a href={project.live} target="_blank" rel="noopener noreferrer">
                   {<img src={project.img} alt={project.title} />}
                 </a>
               </div>
 
+              <div className="title-wrapper">
+                <h3>{project.title}</h3>
+              </div>
+
               <p>{project.description}</p>
-              <ul>
-                {project.stack.map((stack, index) => {
-                  return <li key={index}>{stack}</li>;
-                })}
-              </ul>
-              <div className="site-links">
-                <a href={project.repo}>
+              <div className="project-footer">
+                <ul>
+                  {project.stack.map((stack, index) => {
+                    return <li key={index}>{stack}</li>;
+                  })}
+                </ul>
+                <div className="site-links">
+                  {/* <a href={project.repo}>
                   <BiLogoGithub />
-                </a>
-                <a href={project.live}>
-                  <BiLink />
-                </a>
+                </a> */}
+                  <a href={project.live}>
+                    <BiLink />
+                  </a>
+                </div>
               </div>
             </article>
           );
