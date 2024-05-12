@@ -114,7 +114,7 @@ const Contact = () => {
         {isThankyouVisible && (
           <div className="thank-you">
             <BiBadgeCheck />
-            <p>Thank you for contacting me. I will response as long as possible</p>
+            <p>Thank you for contacting me. I will response as quickly as possible</p>
           </div>
         )}
       </form>
