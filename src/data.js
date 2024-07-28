@@ -31,7 +31,7 @@ export const projects = [
     title: "Beyster Foundation",
     description: "The Beyster Foundation for Enterprise Development (BFED) supports interdisciplinary research, higher education programs, and innovative place-based initiatives to advance broad‐based ownership and entrepreneurship.  Founded in 1986 and originally named Foundation for Enterprise Development.",
     stack: ["ACF", "PHP", "Understrap Theme"],
-    live: "https://wordpress-1220116-4412118.cloudwaysapps.com/",
+    live: "https://www.beyster.com/",
     repo: "https://github.com/sktt1faker02/coffeeroasters-subscription-site",
   },
 
